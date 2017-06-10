@@ -1,0 +1,84 @@
+.root {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 2%;
+    &.hide {
+        display: none;
+    }
+}
+
+.tile {
+    width: 100%;
+    display: inherit;
+    &.hide {
+        display: none;
+    }
+}
+
+.video {
+    max-width: 512px;
+    width: 100%;
+    margin: 8px;
+    padding: 2.34%;
+    background-color: white;
+    border: solid 2px #e6e6e6;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+}
+
+@media (min-width: 712px) and (max-width: 1020px) {
+    .tile {
+        width: percentage(1/2);
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1350px) {
+    .tile {
+        width: percentage(1/3);
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1800px) {
+    .tile {
+        width: percentage(1/4);
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 2300px) {
+    .tile {
+        width: percentage(1/5);
+    }
+}
+
+@media (min-width: 2300px) and (max-width: 2700px) {
+    .tile {
+        width: percentage(1/6);
+    }
+}
+
+@media (min-width: 2700px) and (max-width: 3200px) {
+    .tile {
+        width: percentage(1/7);
+    }
+}
+
+@media (min-width: 3200px) and (max-width: 3700px) {
+    .tile {
+        width: percentage(1/8);
+    }
+}
+
+@media (min-width: 3700px) and (max-width: 4200px) {
+    .tile {
+        width: percentage(1/9);
+    }
+}
+
+@media (min-width: 4200px) {
+    .tile {
+        width: percentage(1/10);
+    }
+}

@@ -1,0 +1,72 @@
+.root {
+    background-color: white;
+    border: solid 2px #e6e6e6;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    flex: 1;
+    margin: 8px;
+    padding: 1%;
+    background-color: white;
+    border: solid 2px #e6e6e6;
+}
+
+.info {
+    height: 100%;
+    min-width: 400px;
+    padding: 12px;
+}
+
+i.icon {
+    padding: 0 8px 0 0;
+}
+
+button {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#download {
+    color: #fff;
+    background-color: #f8a400;
+}
+
+#add {
+    color: #fff;
+    background-color: #87c436;
+}
+
+h2 {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.actions {
+    padding-top: 16px;
+}
+
+@media (max-width: 1000px) {
+    .root {
+        flex-direction: column;
+    }
+    .video {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        min-width: 0;
+    }
+}

@@ -1,0 +1,61 @@
+$sidewidth: 200px;
+$menubarheight: 83px;
+
+.root {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.side {
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    width: $sidewidth;
+    min-width: $sidewidth;
+    position: fixed;
+    left: 0;
+    margin-top: $menubarheight;
+    border-style: solid;
+    border-color: #e6e6e6;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.content {
+    margin-top: $menubarheight;
+    margin-left: $sidewidth;
+    width: 100%;
+}
+
+.content.withoutside {
+    margin-left: 0;
+}
+
+@media (max-width: 550px) {
+    .root {
+        flex-direction: column;
+    }
+    .menu {
+        position: inherit;
+        height: auto;
+    }
+    .side {
+        width: 100%;
+        margin-top: 0;
+        position: inherit;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}

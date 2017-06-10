@@ -1,0 +1,29 @@
+@import 'constants';
+.root {
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    border: solid 2px #e6e6e6;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    width: 30px;
+    height: 100%;
+    background-color: $red;
+}
+
+input {
+    min-width: calc(100% - 16px);
+    padding: 0 8px;
+    border: none;
+}

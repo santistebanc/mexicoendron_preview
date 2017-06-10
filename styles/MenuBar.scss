@@ -1,0 +1,86 @@
+@import 'constants';
+
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 83px;
+    background: white;
+}
+
+.search {
+    flex: 1;
+    max-width: 250px;
+    height: 36px;
+    display: flex;
+}
+
+.logo-section {
+    height: 100%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 75px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 36px;
+}
+
+.logincontainer{
+    align-self: flex-end;
+    display: none;
+    position: relative;
+}
+
+.logincontainer.show{
+    display: inherit;
+}
+.loginform{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+button{
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  border: none;
+  background-color: $red;
+}
+
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+}
+
+@media (max-width: 550px) {
+    .logo {
+        flex: 1;
+        width: 100%;
+    }
+    .nav{
+        margin-left: auto;
+    }
+    .search {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+        @include order(2);//por alguna razon no sirve poner directamente  order: 2;
+    }
+}

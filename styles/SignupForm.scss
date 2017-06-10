@@ -1,0 +1,43 @@
+@import 'constants';
+.root {
+    width: 100%;
+    display: flex;
+}
+
+.panel {
+    background: white;
+    border: solid 2px rgb(230, 230, 230);
+    width: 500px;
+    margin: 5% auto;
+    padding: 1%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 28px);
+    font-size: 1em;
+    padding: 8px;
+    margin: 4px;
+}
+
+input[type="submit"] {
+    background: $blue;
+    max-width: 100px;
+    margin: 4px;
+    align-self: flex-end;
+}
+
+h2 {
+    padding: 0 4px
+}
+
+.error {
+    color: $red;
+    margin: 4px;
+}

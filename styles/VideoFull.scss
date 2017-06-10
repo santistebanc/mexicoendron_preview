@@ -1,0 +1,39 @@
+@import 'constants';
+
+.root {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.error-overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    h4 {
+        color: white;
+        font-size: 2em;
+    }
+}
+
+.loading-overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

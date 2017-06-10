@@ -1,0 +1,18 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    display: inline-block;
+    color: #aaa;
+    padding: 4px;
+    margin: 2px;
+    border: solid 2px #eee;
+    cursor: pointer;
+}
+
+.chip:hover {
+    color: #333;
+    background-color: #eee;
+}

@@ -1,0 +1,21 @@
+.root {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    padding: 8px;
+}
+
+h3 {
+    margin: 4px 0;
+}
+
+@media (max-width: 550px) {
+    .root {
+        flex-direction: row;
+    }
+}
