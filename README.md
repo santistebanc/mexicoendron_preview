@@ -4,7 +4,7 @@
 
 ## Stock-Videos from Mexico filmed with drone.
 
-**Demo https://mexicoendron1.now.sh/ (v0.1.0)**
+**Demo https://mexicoendron.now.sh/ (v0.1.0)**
 
 ### *This is a copy from an earlier version of the App (v0.1.0)*
 
